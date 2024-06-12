@@ -1,0 +1,70 @@
+<h1>Results for {{movieTitle}}</h1>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Cover</th>
+        <th scope="col">Title</th>
+        <th scope="col">Descroption</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>
+            <img src="../../../assets/Images/batmancards.png.png" width="100px">
+        </td>
+        <td>Movie #1 Title</td>
+        <td>Movie Description</td>
+        <td><a class= "btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Trailer</a></td>
+        <td><a class="btn btn-primary">Details</a></td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>
+            <img src="../../../assets/Images/batmancards.png.png" width="100px">
+        </td>
+        <td>Movie #2 Title</td>
+        <td>Movie Description</td>
+        <td><a class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Trailer</a></td>
+        <td><a class="btn btn-primary">Details</a></td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>
+            <img src="../../../assets/Images/batmancards.png.png" width="100px">
+        </td>
+        <td>Movie #3 Title</td>
+        <td>Movie Description</td>
+        <td><a class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Trailer</a></td>
+        <td><a class="btn btn-primary"routerLink="/details">Details</a></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <!--modal box -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/hRFY_Fesa9Q?si=jQ8HkwUKzizCKMQm"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="modal-footer justify-content-center">
+        {{movieTitle}}
+      </div>
+    </div>
+  </div>
+</div>
